@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px 160px;
+  background: var(--light-accent-green-f3faf2) 0% 0% no-repeat padding-box;
+  background: #f3faf2 0% 0% no-repeat padding-box;
+}
+
+.container > div {
+  text-align: center;
+  flex: 1;
+}
+
+.container > div > h4 {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-64) /
+    var(--unnamed-line-spacing-80) var(--unnamed-font-family-millik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  font: normal normal normal 64px/40px Millik;
+  color: #335f32;
+}
+
+.container > div > p {
+  font: var(--unnamed-font-style-normal) normal 600 var(--unnamed-font-size-14) /
+    60px var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  font: normal normal 600 14px/60px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .container > div {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .container > div > h4 {
+    color: var(--primary-335f32);
+    font: normal normal normal 24px/24px Millik;
+    color: #335f32;
+  }
+
+  .container > div > p {
+    font: normal normal 600 14px/32px "Roboto";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .container > div {
+    text-align: center;
+    flex: 1;
+    flex-basis: 100%;
+  }
+
+  .container > div > h4 {
+    color: var(--primary-335f32);
+    font: normal normal normal 24px/24px Millik;
+    color: #335f32;
+  }
+
+  .container > div > p {
+    font: normal normal 600 14px/32px "Roboto";
+  }
+}

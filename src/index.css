@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Slab", "Roboto", "Open Sans", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Roboto Slab", "Roboto", "Open Sans", source-code-pro, Menlo,
+    Monaco, Consolas, "Courier New", monospace;
+}
+
+:root {
+  /* === COLOR VARIABLES (Updated to Strathmore Guidelines) === */
+
+  --unnamed-color-707070: #404040; /* Corporate Grey */
+  --tertiary-yellow-f5f5de: #ffffff; /* Safety White placeholder */
+  --mid-grey-dedede: #404040; /* Secondary Grey */
+  --mid-accent-green-e9f5e7: #e31a21; /* Corporate Red accent */
+  --light-accent-green-f3faf2: #ffffff; /* White tone */
+  --offer-letter-template-0089d1: #e31a21; /* CTA Red */
+  --yellow-c3b40a: #e31a21; /* CTA / Alert Red */
+  --purple-640164: #000000; /* Primary Black placeholder */
+  --orange-ea6c10: #e31a21; /* Corporate Red */
+  --red-alert-d10808: #e31a21; /* Corporate Red */
+  --white-ffffff: #ffffff; /* Safety White */
+  --secondary-0a7e32: #404040; /* Corporate Grey */
+  --dark-grey-4b4b4b: #404040; /* Corporate Grey */
+  --primary-335f32: #000000; /* Primary Black */
+  --light-grey-f0f0f0: #ffffff; /* Safety White */
+  --unnamed-color-000000: #000000; /* Primary Black */
+  --unnamed-color-fcfcfc: #ffffff; /* Safety White */
+  --unnamed-color-d8d8d8: #404040; /* Corporate Grey */
+
+  --unnamed-font-family-red-hat-display: "Roboto", "Open Sans", "Roboto Slab",
+    sans-serif;
+  --unnamed-font-family-millik: "Roboto";
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-normal: 400;
+  --unnamed-font-weight-medium: 600;
+
+  /* === FONT SIZES (kept intact) === */
+  --unnamed-font-size-10: 10px;
+  --unnamed-font-size-12: 12px;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-18: 18px;
+  --unnamed-font-size-24: 24px;
+  --unnamed-font-size-32: 32px;
+  --unnamed-font-size-48: 48px;
+  --unnamed-font-size-64: 64px;
+
+  /* === CHARACTER & LINE SPACING (unchanged) === */
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-12: 12px;
+  --unnamed-line-spacing-16: 16px;
+  --unnamed-line-spacing-17: 17px;
+  --unnamed-line-spacing-20: 20px;
+  --unnamed-line-spacing-24: 24px;
+  --unnamed-line-spacing-32: 32px;
+  --unnamed-line-spacing-34: 34px;
+  --unnamed-line-spacing-37: 37px;
+  --unnamed-line-spacing-40: 40px;
+  --unnamed-line-spacing-80: 80px;
+}
+
+/* Character Styles */
+.body-regular-mobile-red-hat-display-—-12pt {
+  font-family: var(--unnamed-font-family-red-hat-display);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-16);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-d8d8d8);
+}
+.body-small-mobile-red-hat-display-—-10pt {
+  font-family: var(--unnamed-font-family-red-hat-display);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-10);
+  line-height: var(--unnamed-line-spacing-12);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--dark-grey-4b4b4b);
+}
+.body-large-mobile-—-14pt {
+  font-family: var(--unnamed-font-family-red-hat-display);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-20);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.h1-mobile-—-24pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-40);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+}
+.h1-mobile-—-24pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-40);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.h2-mobile-millik-—-18pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-18);
+  line-height: var(--unnamed-line-spacing-80);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.h3-mobile-millik-—-14pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-17);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-fcfcfc);
+}
+.h1-desktop—-64pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-64);
+  line-height: var(--unnamed-line-spacing-80);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+}
+
+.h1-desktop—-64pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-64);
+  line-height: var(--unnamed-line-spacing-80);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.h2-desktop—-48pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-48);
+  line-height: var(--unnamed-line-spacing-80);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.h2-desktop—-48pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-48);
+  line-height: var(--unnamed-line-spacing-80);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+}
+.h3-desktop-—-32pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-32);
+  line-height: var(--unnamed-line-spacing-37);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.h4-desktop-—-24pt {
+  font-family: var(--unnamed-font-family-millik);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-34);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.body-regular-desktop-—-20pt {
+  font-family: var(--unnamed-font-family-red-hat-display);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-32);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.desktop-body-small-—-14pt {
+  font-family: var(--unnamed-font-family-red-hat-display);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.desktop-secondary-body-large-—-18pt {
+  font-family: var(--unnamed-font-family-red-hat-display);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-18);
+  line-height: var(--unnamed-line-spacing-32);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--dark-grey-4b4b4b);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,96 @@
+.container {
+  background: var(--mid-accent-green-e9f5e7) 0% 0% no-repeat padding-box;
+  background: #e9f5e7 0% 0% no-repeat padding-box;
+  padding: 110px 100px;
+}
+
+.staffSection {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.staffSection::-webkit-scrollbar {
+  display: none;
+}
+
+.staffSection > div {
+  flex-basis: 379px;
+  flex-shrink: 0;
+}
+
+.scrollButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 60px;
+}
+
+.scrollButtons > span {
+  width: 49px;
+  height: 49px;
+  background: transparent
+    linear-gradient(
+      180deg,
+      var(--primary-335f32) 0%,
+      var(--dark-grey-4b4b4b) 100%
+    )
+    0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-707070);
+  background: transparent linear-gradient(180deg, #335f32 0%, #4b4b4b 100%) 0%
+    0% no-repeat padding-box;
+  border: 1px solid #707070;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 7rem 1rem 1rem 1rem;
+  }
+
+  .staffSection {
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .staffSection::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 7rem 1rem 1rem 1rem;
+  }
+
+  .staffSection {
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .staffSection > div {
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
+
+  .staffSection::-webkit-scrollbar {
+    display: none;
+  }
+}

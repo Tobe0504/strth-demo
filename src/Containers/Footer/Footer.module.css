@@ -1,0 +1,179 @@
+.topSection {
+  background: var(--primary-335f32) 0% 0% no-repeat padding-box;
+  background: #e31a21 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 42px 100px;
+}
+
+.routesSection {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.routes {
+  flex-basis: 25%;
+}
+
+.routes > h4 {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) / 28px
+    var(--unnamed-font-family-Roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-fcfcfc);
+  text-align: left;
+  font: normal normal normal 24px/28px Roboto;
+  letter-spacing: 0px;
+  color: #fcfcfc;
+}
+
+.otherOptions > a {
+  color: var(--white-ffffff);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.notPriority {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+    var(--unnamed-line-spacing-20) var(--unnamed-font-family-red-hat-display);
+  font: normal normal normal 16px/20px "Roboto";
+}
+
+.priority {
+  font: var(--unnamed-font-style-normal) normal bold var(--unnamed-font-size-16) /
+    var(--unnamed-line-spacing-24) var(--unnamed-font-family-red-hat-display);
+  font: normal normal bold 16px/24px "Roboto";
+}
+
+.bottomSection {
+  padding: 0.75rem;
+  font: var(--unnamed-font-style-normal) normal bold var(--unnamed-font-size-14) /
+    var(--unnamed-line-spacing-24) var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  text-align: left;
+  font: normal normal bold 14px/24px "Roboto";
+  letter-spacing: 0px;
+  color: #e31a21;
+  text-transform: uppercase;
+  background: var(--tertiary-yellow-f5f5de) 0% 0% no-repeat padding-box;
+  background: #f5f5de 0% 0% no-repeat padding-box;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .topSection {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .communitySection {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .communitySection > div {
+    gap: 0.5rem;
+
+    font: normal normal normal 16px/20px Roboto;
+  }
+
+  .communitySection > div > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .routesSection {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .routes {
+    margin-bottom: 1.5rem;
+  }
+
+  .routes > h4 {
+    font: normal normal normal 24px/24px Roboto;
+  }
+
+  .otherOptions > a {
+    margin-top: 1rem;
+  }
+
+  .notPriority {
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+      var(--unnamed-line-spacing-20) var(--unnamed-font-family-red-hat-display);
+    font: normal normal normal 14px/16px "Roboto";
+  }
+
+  .priority {
+    font: var(--unnamed-font-style-normal) normal bold
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24)
+      var(--unnamed-font-family-red-hat-display);
+    font: normal normal bold 14px/16px "Roboto";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topSection {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .communitySection {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .communitySection > div {
+    gap: 0.5rem;
+    font: normal normal normal 14px/15px Roboto;
+  }
+
+  .communitySection > div > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .routesSection {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .routes {
+    margin-bottom: 1.5rem;
+  }
+
+  .routes > h4 {
+    font: normal normal normal 24px/24px Roboto;
+  }
+
+  .otherOptions > a {
+    margin-top: 1rem;
+  }
+
+  .notPriority {
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+      var(--unnamed-line-spacing-20) var(--unnamed-font-family-red-hat-display);
+    font: normal normal normal 14px/16px "Roboto";
+  }
+
+  .priority {
+    font: var(--unnamed-font-style-normal) normal bold
+      var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24)
+      var(--unnamed-font-family-red-hat-display);
+    font: normal normal bold 14px/16px "Roboto";
+  }
+}

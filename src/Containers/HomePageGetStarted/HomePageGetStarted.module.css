@@ -1,0 +1,96 @@
+.container {
+  padding: 78px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5de 0% 0% no-repeat padding-box;
+}
+
+.container > h4 {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-48) /
+    var(--unnamed-line-spacing-80) var(--unnamed-font-family-millik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #e31a21;
+}
+
+.container > p {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) / 30px
+    var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  text-align: center;
+  font: normal normal normal 16px/30px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  width: 50%;
+}
+
+.container > p > span {
+  font: var(--unnamed-font-style-normal) normal bold var(--unnamed-font-size-16) /
+    30px var(--unnamed-font-family-red-hat-display);
+}
+
+.container > button {
+  width: 154px;
+  font: var(--unnamed-font-style-normal) normal bold var(--unnamed-font-size-14) /
+    18px var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container > h4 {
+    font: normal normal normal 24px/40px Roboto;
+    letter-spacing: 0px;
+  }
+
+  .container > p {
+    font: normal normal normal 16px/30px "Roboto";
+    width: 100%;
+    margin: 0rem;
+  }
+
+  .container > button {
+    width: 80%;
+    font: var(--unnamed-font-style-normal) normal bold
+      var(--unnamed-font-size-14) / 18px
+      var(--unnamed-font-family-red-hat-display);
+    letter-spacing: var(--unnamed-character-spacing-0);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container > h4 {
+    font: normal normal normal 24px/40px Roboto;
+    letter-spacing: 0px;
+  }
+
+  .container > p {
+    font: normal normal normal 16px/30px "Roboto";
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .container > button {
+    width: 80%;
+    font: var(--unnamed-font-style-normal) normal bold
+      var(--unnamed-font-size-14) / 18px
+      var(--unnamed-font-family-red-hat-display);
+    letter-spacing: var(--unnamed-character-spacing-0);
+  }
+}

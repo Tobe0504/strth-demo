@@ -1,0 +1,28 @@
+.container {
+  padding: 20px 100px;
+  text-align: center;
+}
+
+.container > p {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+    var(--unnamed-line-spacing-34) var(--unnamed-font-family-millik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  letter-spacing: 0px;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container > p {
+    width: 100%;
+    margin: 1rem auto;
+    line-height: 150%;
+    font-size: 16px;
+  }
+}

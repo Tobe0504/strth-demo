@@ -1,0 +1,13 @@
+.container {
+  background: var(--light-grey-f0f0f0) 0% 0% no-repeat padding-box;
+  padding: 2rem 0;
+  overflow-y: auto;
+  height: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+.close {
+  text-align: right;
+  padding: 0 1rem;
+}

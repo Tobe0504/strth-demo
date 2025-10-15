@@ -1,0 +1,201 @@
+.container {
+  padding: 80px 100px;
+}
+
+.description {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+    var(--unnamed-line-spacing-34) var(--unnamed-font-family-millik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  text-align: left;
+  letter-spacing: 0px;
+  color: var(--mid-grey-dedede);
+  margin-bottom: 1rem;
+}
+
+.howItWorksContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.how {
+  flex-basis: 31%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.how:hover div:nth-child(1) {
+  background: #e31a21;
+  color: var(--white-ffffff);
+}
+
+.how:hover div:nth-child(2) {
+  background: #e31a2115;
+}
+
+.how > div:nth-child(1) {
+  background: var(--tertiary-yellow-f5f5de) 0% 0% no-repeat padding-box;
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) 30px/101px
+    var(--unnamed-font-family-millik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: #e31a21;
+  text-align: left;
+  letter-spacing: 0px;
+  width: 61px;
+  height: 61px;
+  flex-basis: 61px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.how > div:nth-child(2) {
+  flex: 1;
+  padding: 12px 24px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.how > div:nth-child(2) > h4 {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+    var(--unnamed-line-spacing-34) var(--unnamed-font-family-millik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #e31a21;
+  margin-bottom: 1rem;
+}
+
+.how > div:nth-child(2) > p {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) / 30px
+    var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.videoSection {
+  border: 1px solid var(--primary-335f32);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 100px;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.videoSection > img {
+  width: 28px;
+  height: 28px;
+}
+
+.videoSection > span {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-medium) var(--unnamed-font-size-12) / 23px
+    var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  text-align: left;
+  font: normal normal 600 12px/23px "Roboto";
+  letter-spacing: 0px;
+  color: #335f32;
+  text-transform: uppercase;
+}
+
+.modalContainer {
+  height: 100%;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .howItWorksContainer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .how {
+    flex-basis: 100%;
+    gap: 12px;
+  }
+
+  .how > div:nth-child(1) {
+    font: normal normal normal 20px/61px "Roboto";
+    width: 61px;
+    height: 61px;
+  }
+
+  .how > div:nth-child(2) {
+    padding: 16px;
+  }
+
+  .how > div:nth-child(2) > h4 {
+    font: normal normal normal 20px/24px "Roboto";
+    margin-bottom: 1rem;
+  }
+
+  .how > div:nth-child(2) > p {
+    text-align: left;
+    font: normal normal normal 14px/24px "Roboto";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .howItWorksContainer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  .how {
+    flex-basis: 100%;
+    gap: 12px;
+  }
+
+  .how > div:nth-child(1) {
+    font: normal normal normal 20px/61px "Roboto";
+    width: 61px;
+    height: 61px;
+  }
+
+  .how > div:nth-child(2) {
+    padding: 16px;
+  }
+
+  .how > div:nth-child(2) > h4 {
+    font: normal normal normal 20px/24px "Roboto";
+    margin-bottom: 1rem;
+  }
+
+  .how > div:nth-child(2) > p {
+    text-align: left;
+    font: normal normal normal 14px/24px "Roboto";
+  }
+}

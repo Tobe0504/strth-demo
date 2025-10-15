@@ -1,0 +1,206 @@
+.container {
+  height: 100%;
+  padding: 50px 29px;
+  background: var(--light-grey-f0f0f0) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  overflow-y: auto;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container > img {
+  width: 80px;
+  height: 80px;
+}
+
+.routesSection {
+  margin-top: 1.5rem;
+}
+
+.routesSection > a,
+.routesSection > div > div:nth-child(1):not(.otherOptions),
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.routesSection > div > div:nth-child(1):hover span {
+  text-decoration: underline;
+  font: normal normal 500 20px/26px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.routesSection > div > div:nth-child(1) > span {
+  font: normal normal 500 16px/21px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.routesSection > a > span:nth-child(2) {
+  overflow-x: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.routesSection > div:not(.otherOptions) {
+  padding: 0;
+}
+
+.routesSection > div > div > svg:nth-child(3) {
+  margin-left: auto;
+}
+
+.otherOptions > a {
+  text-decoration: none;
+  padding: 10px 10px 10px 30px;
+  border-radius: 4px;
+  font: normal normal 500 16px/21px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: block;
+  color: var(--grey);
+  white-space: nowrap;
+}
+
+.otherOptions {
+  flex-basis: 100%;
+  overflow-y: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  font: normal normal 800 16px/21px "Roboto";
+  letter-spacing: 0px;
+  color: #335f32;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.active > span > svg {
+  font-size: 32px;
+}
+
+.active:nth-child(4) svg {
+  stroke: none;
+  fill: var(--white);
+}
+
+.active:nth-child(4) svg path {
+  fill: var(--white);
+}
+
+.inActive {
+  font: normal normal 500 16px/30px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.inActive:nth-child(4) {
+  stroke: none;
+}
+
+.link {
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link:nth-child(2) {
+  flex: 1;
+}
+
+.moreMenuContentInActive {
+  color: var(--grey);
+  border-radius: 5px;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  padding: 8px;
+}
+
+.moreMenuContentActive {
+  background-color: var(--purple);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+}
+
+.moreMenuContentInActive a {
+  color: var(--grey);
+  border: 2px solid yellow;
+}
+
+.moreMenuContentActive a {
+  color: var(--white);
+}
+
+.moreMenuContentActive svg path {
+  stroke: var(--white);
+}
+
+.moreMenuContentActive svg:first-child path {
+  fill: var(--white);
+  stroke: none;
+}
+
+.logout {
+  margin-top: 3rem;
+  padding: 10px;
+  text-align: left;
+  font: normal normal 800 14px/18px "Roboto";
+  letter-spacing: 0px;
+  color: #c11111;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container > img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container > img {
+    width: 80px;
+    height: 80px;
+  }
+}

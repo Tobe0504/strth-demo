@@ -1,0 +1,242 @@
+.container {
+  padding: 1.5rem 40px;
+}
+
+.infoSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.infoSection > div {
+  flex-basis: 23%;
+}
+
+.container > p {
+  font: normal normal normal 16px/26px "Roboto";
+  letter-spacing: 0px;
+  color: #2c2c2c;
+  margin: 40px 0;
+}
+
+.table {
+  overflow-x: auto;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--light-grey-f0f0f0) 0% 0% no-repeat padding-box;
+  border-radius: 8px 8px 0px 0px;
+  padding: 26px 2rem;
+  font: normal normal 800 16px/21px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  white-space: nowrap;
+  width: min-content;
+}
+
+.tableBody {
+  font: normal normal normal 16px/30px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  padding: 40px 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+  position: relative;
+  width: min-content;
+  gap: 1rem;
+}
+
+.otherOptions {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  width: 212px;
+  height: 74px;
+  font: normal normal normal 14px/30px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  position: absolute;
+  right: 1rem;
+  bottom: -40px;
+  padding: 0.5rem;
+}
+
+.otherOptions > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.otherOptions > div > span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableHeader
+  > span:not(.tableHeader > span:first-child, .tableHeader > span:last-child),
+.tableBody
+  > span:not(.tableBody > span:first-child, .tableBody > span:last-child) {
+  flex: 1;
+  text-align: center;
+  overflow-x: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  text-align: left;
+  min-width: 180px;
+  overflow: hidden;
+}
+
+.tableBody > span:first-child,
+.tableBody > span:last-child,
+.tableHeader > span:first-child,
+.tableHeader > span:last-child {
+  flex: 0.5;
+  text-align: center;
+  overflow-x: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  text-align: left;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+.tableBody > span:last-child {
+  cursor: pointer;
+  text-align: right;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .infoSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .infoSection > div {
+    flex-basis: 45%;
+  }
+
+  .container > p {
+    font: normal normal normal 14px/18px "Roboto";
+    margin: 24px 0;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+
+  .tableHeader {
+    gap: 1rem;
+    padding: 1rem;
+    font: normal normal 800 14px/18px "Roboto";
+  }
+
+  .tableBody {
+    font: normal normal normal 14px/18px "Roboto";
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .otherOptions {
+    font: normal normal normal 12px/20px "Roboto";
+  }
+
+  .otherOptions > div {
+    margin-bottom: 8px;
+  }
+
+  .tableHeader
+    > span:not(.tableHeader > span:first-child, .tableHeader > span:last-child),
+  .tableBody
+    > span:not(.tableBody > span:first-child, .tableBody > span:last-child) {
+    min-width: 140px;
+  }
+
+  .tableBody > span:first-child,
+  .tableBody > span:last-child,
+  .tableHeader > span:first-child,
+  .tableHeader > span:last-child {
+    flex: 0.5;
+    min-width: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .infoSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .infoSection > div {
+    flex-basis: 45%;
+  }
+
+  .container > p {
+    font: normal normal normal 14px/18px "Roboto";
+    margin: 24px 0;
+  }
+
+  .table {
+    overflow-x: auto;
+  }
+
+  .tableHeader {
+    gap: 1rem;
+    padding: 1rem;
+    font: normal normal 800 14px/18px "Roboto";
+  }
+
+  .tableBody {
+    font: normal normal normal 14px/18px "Roboto";
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .otherOptions {
+    font: normal normal normal 12px/20px "Roboto";
+  }
+
+  .otherOptions > div {
+    margin-bottom: 8px;
+  }
+
+  .tableHeader
+    > span:not(.tableHeader > span:first-child, .tableHeader > span:last-child),
+  .tableBody
+    > span:not(.tableBody > span:first-child, .tableBody > span:last-child) {
+    min-width: 140px;
+  }
+
+  .tableBody > span:first-child,
+  .tableBody > span:last-child,
+  .tableHeader > span:first-child,
+  .tableHeader > span:last-child {
+    flex: 0.5;
+    min-width: 70px;
+  }
+}

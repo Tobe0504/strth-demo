@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.container {
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  text-align: left;
+  font: normal normal normal 48px/80px Roboto;
+  letter-spacing: 0px;
+  color: var(--mid-accent-green-e9f5e7);
+}
+
+.container > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container > h4 {
+    font-size: 24px;
+  }
+
+  .container > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .container > img {
+    width: 100%;
+  }
+}

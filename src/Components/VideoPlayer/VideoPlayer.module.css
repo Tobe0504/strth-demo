@@ -1,0 +1,44 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.container > video {
+  width: 100%;
+}
+
+.thumbNail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  animation: appear 0.4s ease-in-out;
+}
+
+.playPause {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  width: 92px;
+  height: 92px;
+  cursor: pointer;
+}

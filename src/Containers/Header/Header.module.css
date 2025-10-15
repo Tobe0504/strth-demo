@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000005;
+  opacity: 1;
+  padding: 0 100px;
+  height: 116px;
+  gap: 2rem;
+}
+
+.container > img:nth-child(1) {
+  width: 190px;
+  height: 90px;
+}
+
+.inputSection {
+  width: 481px;
+  height: 64px;
+  display: none;
+}
+
+.routesSection {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: auto;
+  font: normal normal normal 16px/60px "Roboto";
+}
+
+.routesSection > a {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) / 60px
+    var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--dark-grey-4b4b4b);
+  text-align: left;
+  font: normal normal normal 16px/60px "Roboto";
+  letter-spacing: 0px;
+  color: #4b4b4b;
+  opacity: 1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.routesSection > a > span:nth-child(1) {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.active > span:nth-child(1) {
+  font: var(--unnamed-font-style-normal) normal bold var(--unnamed-font-size-16) /
+    60px var(--unnamed-font-family-red-hat-display);
+
+  overflow: hidden;
+}
+
+.routesSection > a > span:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.active > span:nth-child(2) {
+  background: #e31a21;
+}
+
+.inActive > span:nth-child(2) {
+  background: transparent;
+}
+
+.hamburgerMenu {
+  display: none;
+  color: #e31a21;
+  margin-left: auto;
+}
+
+.sideNav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  background-color: var(--white);
+  overflow: hidden;
+  width: 0;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 1rem;
+    height: 80px;
+    gap: 1rem;
+  }
+
+  .container > img:nth-child(1) {
+    width: 70px;
+    height: 36px;
+  }
+
+  .inputSection {
+    display: none;
+  }
+
+  .routesSection {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: block;
+  }
+  .notificationsSection {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+    height: 80px;
+    gap: 1rem;
+  }
+
+  .container > img:nth-child(1) {
+    width: 100px;
+    height: 60px;
+  }
+
+  .inputSection {
+    display: none;
+  }
+
+  .routesSection {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: block;
+  }
+  .notificationsSection {
+    display: none;
+  }
+}

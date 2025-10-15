@@ -1,0 +1,45 @@
+.button {
+  border-radius: 5px;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  font: var(--unnamed-font-style-normal) normal bold 20px/26px
+    var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: left;
+  font: normal normal bold 20px/26px "Roboto";
+  letter-spacing: 0px;
+  width: 100%;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary {
+  border: none;
+  color: var(--white-ffffff);
+  background: #e31a21 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+}
+
+.secondary {
+  border: 2px solid var(--yellow-c3b40);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--yellow-c3b40);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .button {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}

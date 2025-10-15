@@ -1,0 +1,80 @@
+.card {
+  border: 2px solid var(--light-grey-f0f0f0);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 161px;
+  position: relative;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.card > svg {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.card > h4 {
+  text-align: left;
+  font: normal normal 800 30px/53px "Roboto";
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.card > h4 > span {
+  color: #c11111;
+}
+
+.card > p {
+  font: normal normal 500 15px/27px "Roboto";
+  letter-spacing: 0px;
+  color: #4b4b4b;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .card {
+    height: 140px;
+  }
+
+  .card > svg {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .card > h4 {
+    font: normal normal 800 20px/32px "Roboto";
+  }
+
+  .card > p {
+    text-align: left;
+    font: normal normal 500 13px/18px "Roboto";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    height: 140px;
+  }
+
+  .card > svg {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .card > h4 {
+    font: normal normal 800 20px/32px "Roboto";
+  }
+
+  .card > p {
+    text-align: left;
+    font: normal normal 500 13px/18px "Roboto";
+  }
+}

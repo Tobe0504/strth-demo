@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 1rem;
+  background: #fff;
+}
+
+.leftSection > h4 {
+  text-align: left;
+  font: normal normal normal 64px/80px Millik;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.leftSection > p {
+  text-align: left;
+  font: normal normal normal 18px/32px "Roboto";
+  letter-spacing: 0px;
+  color: #4b4b4b;
+}
+
+.rightSection {
+  width: 55px;
+  height: 55px;
+  background: var(--primary-335f32) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: auto;
+}
+
+.notificationIsInactive {
+  background: #335f32 0% 0% no-repeat padding-box;
+}
+
+.notificationIsActive {
+  background: #fff;
+}
+
+.rightSection > span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  font: var(--unnamed-font-style-normal) normal bold 11px/14px
+    var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--primary-335f32);
+  text-align: left;
+  font: normal normal bold 11px/14px "Roboto";
+  letter-spacing: 0px;
+  color: #335f32;
+  opacity: 1;
+  background: var(--white-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.notificationIsActive > span {
+  background: var(--primary-335f32) 0% 0% no-repeat padding-box;
+  background: #335f32 0% 0% no-repeat padding-box;
+  color: var(--white-ffffff);
+}
+
+.hamburgerMenu {
+  display: none;
+  color: #335f32;
+}
+
+.sideNav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  background-color: var(--white);
+  overflow: hidden;
+  width: 0;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .leftSection > h4 {
+    font: normal normal normal 24px/40px Millik;
+  }
+
+  .leftSection > p {
+    font: normal normal normal 14px/20px "Roboto";
+  }
+
+  .rightSection {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightSection > span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .hamburgerMenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .leftSection > h4 {
+    font: normal normal normal 24px/40px Millik;
+  }
+
+  .leftSection > p {
+    font: normal normal normal 14px/20px "Roboto";
+  }
+
+  .rightSection {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+  }
+
+  .rightSection > span {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .hamburgerMenu {
+    display: block;
+  }
+}

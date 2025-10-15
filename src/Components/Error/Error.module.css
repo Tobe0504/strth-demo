@@ -1,0 +1,18 @@
+.container {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--unnamed-color-000000);
+  font-family: var(--unnamed-font-family-red-hat-display);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0.5rem;
+
+  border-radius: 5px;
+  border: 1px solid var(--red-alert-d10808);
+  background: #f8d7d5;
+  margin: 1rem 0;
+}

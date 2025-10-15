@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  min-height: 462px;
+  border: 1px solid var(--primary-335f32);
+  border-radius: 30px;
+  background-size: 100% 100%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover + .hoverOverlay {
+  display: flex;
+}
+
+.container > img {
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.detailSection {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 30px 30px;
+  background: var(--unnamed-color-000000) 0% 0% no-repeat padding-box;
+  background: rgba(0, 0, 0, 0.3) 0% 0% no-repeat padding-box;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detailSection > h6,
+.hoverOverlay > h6 {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+    var(--unnamed-line-spacing-80) var(--unnamed-font-family-millik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-fcfcfc);
+  font: normal normal normal 24px/8px Millik;
+  letter-spacing: 0px;
+  color: #fcfcfc;
+  text-transform: capitalize;
+}
+
+.detailSection > p,
+.hoverOverlay > p {
+  font: var(--unnamed-font-style-normal) normal bold var(--unnamed-font-size-12) /
+    var(--unnamed-line-spacing-80) var(--unnamed-font-family-red-hat-display);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-fcfcfc);
+  text-align: left;
+  font: normal normal bold 12px/50px "Roboto";
+  letter-spacing: 0px;
+  color: #fcfcfc;
+  text-transform: uppercase;
+}
+
+.hoverOverlay {
+  border: 1px solid var(--unnamed-color-707070);
+  background-color: none;
+  border-radius: 30px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverOverlay > img {
+  width: 116px;
+  height: 116px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.container:hover .hoverOverlay {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5) 0% 0% no-repeat padding-box;
+}
